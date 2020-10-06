@@ -1,0 +1,36 @@
+//acıklama satırı
+html
+head
+title ilayda
+body
+//pug dosyasında degısken olsuturma
+- var okul='sakarya üniversitesi'
+- var sehir='sakarya'
+    =okul.toUpperCase()
+    |#{" "} 
+    br
+    | Bulunduğu şehir #{sehir.toUpperCase()}
+    hr
+//if dongu yapısı
+hr
+- var sayi=13
+if !sayi
+    | sayi değişkeni yok
+else if sayi===12
+    | sayi: #{sayi}
+else
+    | sayi değişkeni belirtilen değer değil.
+hr
+br
+
+
+span(style="color: white; background-color: blue")
+    |merhaba ilayda özdemir
+    br
+    br
+|hosgeldin #{name} #{" "}
+=surname
+<p>This code is <strong>not</strong> escaped!</p>
+    br
+    include footer.pug 
+
